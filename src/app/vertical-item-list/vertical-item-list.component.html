@@ -1,0 +1,15 @@
+<div class="item-list-container" fxLayout="column">
+  <mat-card *ngFor="let item of itemList"
+            fxLayout="row" fxFlex="15"
+            fxLayoutAlign="flex-start center"
+            class="item-list-card"
+            (click)="selectOption(item)">
+    <div fxFlex="30" fxLayoutAlign="center" class="photo-card-wrapper">
+      <mat-card class="photo-card-square"></mat-card>
+    </div>
+    <div fxFlex="70" fxLayout="column" fxLayoutAlign="center center">
+      <p id="item-header">{{item.address.street}} {{item.address.houseNumber}}/{{item.address.houseNumberExt}}</p>
+      <p>Brak aktualnych powiadomień</p>
+    </div>
+  </mat-card>
+</div>

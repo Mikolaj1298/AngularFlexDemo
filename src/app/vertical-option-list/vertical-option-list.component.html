@@ -1,0 +1,10 @@
+<div class="option-list-container" fxLayout="column">
+  <mat-card *ngFor="let option of optionList" fxLayout="row" fxFlex="15" fxLayoutAlign="flex-start center"
+            (click)="selectOption(option.compRef)">
+    <span fxFlex="30" fxLayoutAlign="center center" class="material-icons">{{option.icon}}</span>
+    <div fxFlex="70" fxLayout="column" fxLayoutAlign="center center">
+      <p id="option-header">{{option.label}}</p>
+      <p>{{option.description}}</p>
+    </div>
+  </mat-card>
+</div>

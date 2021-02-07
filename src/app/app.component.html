@@ -1,0 +1,24 @@
+<div class="home-dashboard-panel"
+     fxLayout="row"
+     fxLayout.xs="column"
+     fxLayoutAlign="space-evenly center"
+     fxFill>
+  <div fxFlex="25" fxFill fxLayout="column" fxLayoutAlign="center stretch">
+    <mat-card class="content-card">
+      <app-vertical-item-list [itemList]="apartmentList"></app-vertical-item-list>
+    </mat-card>
+  </div>
+  <div fxFlex="25" fxFill fxLayout="column" fxLayoutAlign="center stretch">
+    <mat-card class="content-card">
+      <app-vertical-option-list [optionList]="homeOptions"></app-vertical-option-list>
+    </mat-card>
+  </div>
+  <div fxFlex="45" fxFill fxLayout="column" fxLayoutAlign="center stretch">
+    <mat-card class="content-card">
+      <div fxLayout="column center" class="info-content-wrapper">
+        <app-info-content fxFlex="50" [infoList]="newsList"></app-info-content>
+        <app-info-content fxFlex="50" [infoList]="messageList"></app-info-content>
+      </div>
+    </mat-card>
+  </div>
+</div>

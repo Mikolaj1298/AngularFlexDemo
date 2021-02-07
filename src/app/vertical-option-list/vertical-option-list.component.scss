@@ -1,0 +1,35 @@
+@import "../../styles/colors";
+
+.option-list-container {
+  height: 100%;
+  width: 100%;
+}
+
+mat-card {
+  min-height: 100px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: $color-dark-grey;
+  color: white;
+  font-family: "Montserrat Light", serif;
+
+  span {
+    font-size: 50px;
+  }
+
+  p {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 1em;
+    opacity: 0.6;
+  }
+}
+
+#option-header {
+  font-size: 1.8em;
+  opacity: 1;
+  line-height: 1.1;
+}
+
+

@@ -1,0 +1,13 @@
+<div class="info-content-container" fxLayout="column" fxLayoutAlign="center center">
+  <mat-card class="info-content-header" fxLayoutAlign="center center">
+    <p>Wiadomości</p>
+  </mat-card>
+  <mat-card class="info-content-list">
+    <div class="info-content-item" *ngFor="let info of infoList" fxLayoutAlign="center center">
+      <p>{{info.label}}</p>
+    </div>
+    <div class="info-content-item" *ngIf="infoList.length === 0" fxLayoutAlign="center center">
+      <p>Brak wiadomości</p>
+    </div>
+  </mat-card>
+</div>
